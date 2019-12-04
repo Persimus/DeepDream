@@ -45,7 +45,7 @@ for file_name in os.listdir('input'):
         img_result = np.clip(img_result, 0.0, 255.0)
         img_result = img_result.astype(np.uint8)
         result = PIL.Image.fromarray(img_result, mode='RGB')
-        result.save('output/{}.jpg'.format(file_name))
+        result.save('output/{}'.format(file_name))
         print('Finished processing ', file_name)
 
 print('Done')
